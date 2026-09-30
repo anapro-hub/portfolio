@@ -204,6 +204,13 @@ footer a { text-decoration: underline; color: var(--subtitle); }
 .next-case a:hover { color: var(--teal); }
 
 @media (max-width: 640px) {
-  .case-row { flex-wrap: wrap; }
-  .case-row .cresult { width: 100%; text-align: left; margin-top: 4px; }
+  .case-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .case-row .tag { order: 2; }
+  .case-row .cresult { order: 3; width: 100%; text-align: left; }
+
+  .case-row::before { background-size: 100% 1150px; }
+  .case-row:nth-of-type(1)::before { background-position: 0 0; }
+  .case-row:nth-of-type(2)::before { background-position: 0 -300px; }
+  .case-row:nth-of-type(3)::before { background-position: 0 -580px; }
+  .case-row:nth-of-type(4)::before { background-position: 0 -860px; }
 }

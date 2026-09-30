@@ -38,7 +38,7 @@
     </div>
   </header>
 
-  <div class="placeholder-shot teal"><span class="cap">Общая карта диспетчерской · заменить на&nbsp;реальный скриншот</span></div>
+  <img src="assets/mvk_image (8).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
 
   <div class="case-body">
 
@@ -55,10 +55,27 @@
     </section>
 
     <section>
+      <h2>Решение</h2>
+      <p>Нас вдохновила масштабность задачи аналитики водоснабжения в&nbsp;крупном городе: это система, от&nbsp;которой напрямую зависит комфорт и&nbsp;безопасность миллионов жителей. Для нас это пример реальной «киберфизической системы», где&nbsp;цифровая модель помогает управлять физической инфраструктурой. Мы старались сделать интерфейсы максимально простыми и&nbsp;удобными, чтобы диспетчеру или сантехнику не&nbsp;приходилось тратить время на&nbsp;лишние действия. В&nbsp;какой-то момент каждый из&nbsp;нас вспомнил свои личные истории — перебои с&nbsp;водой, коммунальные аварии, ситуации, когда помощь приходила не&nbsp;сразу, — и&nbsp;это&nbsp;стало мощной мотивацией.</p>
+      <img src="assets/mvk_image (2).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+      <img src="assets/mvk_image (3).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+      <p>В основу интерфейса лёг принцип воронки внимания: диспетчер видит общую карту города, затем одним кликом переходит к конкретному узлу и карточке аварии.  Цвет работает как сигнал, а не как декор. Использовали принцип светофора, к которому интуитивно обращается любой человек в стрессовой ситуации. Красный и оранжевый зарезервированы для критических событий.<p>
+      <p>Продукт также адаптирован под два принципиально разных контекста использования: большие мониторы диспетчерского центра для общего контроля и смартфоны выездных бригад для работы на месте.<p>
+      <img src="assets/mvk_image (1).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+      <img src="assets/dsnd_image (2).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+    </section>
+
+    <img src="assets/mvk_image (9).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+
+    <section>
       <h2>Пользовательские сценарии</h2>
       <p>Выработали три сценария использования — они отражают трёх разных пользователей системы с&nbsp;разным уровнем ответственности за&nbsp;решения: дежурного диспетчера, который реагирует на&nbsp;аварийную ситуацию в&nbsp;моменте, выездного техника, который проверяет ситуацию на&nbsp;месте, и&nbsp;технического специалиста, который следит за&nbsp;качеством самой ML-модели.</p>
+    <section>
 
-      <h3>Сценарий 1 — обнаружение аварии диспетчером</h3>
+    <img src="assets/mvk_image (4).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+
+    <section>
+      <h2>Сценарий 1 — обнаружение аварии диспетчером</h2>
       <p>Основной, самый частый флоу продукта — от&nbsp;общей картины до&nbsp;конкретного решения.</p>
       <ol>
         <li>Система получает сигнал от&nbsp;ML-модели о&nbsp;повышенной вероятности прорыва на&nbsp;участке сети</li>
@@ -68,20 +85,25 @@
         <li>Диспетчер видит рекомендацию по&nbsp;распределению бригады, подтверждает или корректирует вручную</li>
       </ol>
       <p>Тёмная тема снижает нагрузку на&nbsp;зрение при&nbsp;ночных сменах, цвет используется только как&nbsp;сигнал критичности — красный/оранжевый по&nbsp;принципу светофора, не&nbsp;декоративно.</p>
+      <img src="assets/mvk_image (5).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
+    <section>
 
-      <h3>Сценарий 2 — органическое обучение модели</h3>
+    <section>
+      <h2>Сценарий 2 — органическое обучение модели</h2>
       <p>Диспетчер назначает проверку выездному технику прямо из&nbsp;карточки события. Техник получает задачу в&nbsp;мобильном приложении, проходит чек-лист (проверил клапан, измерил температуру, осмотрел на&nbsp;утечки, сделал фото), отмечает, подтвердился ли&nbsp;прогноз. Отчёт уходит диспетчеру, точность модели обновляется автоматически — без&nbsp;отдельного административного действия, только за&nbsp;счёт того, что в&nbsp;системе работают люди.</p>
+    <section>
 
-      <h3>Сценарий 3 — ручное дообучение модели</h3>
+    <section>      
+      <h2>Сценарий 3 — ручное дообучение модели</h2>
       <p>Отдельный, более формальный цикл для&nbsp;технического специалиста: авторизация (электронная подпись, QR-код, биометрия), просмотр точности модели и&nbsp;корректировка порогов отклонения по&nbsp;каждому параметру. Осознанно более тяжёлый по&nbsp;трению флоу — ошибка здесь влияет на&nbsp;все прогнозы системы, а&nbsp;не&nbsp;на&nbsp;одно событие.</p>
+      <img src="assets/mvk_image (6).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
     </section>
-
-    <div class="placeholder-shot teal"><span class="cap">Карточка события и&nbsp;цикл дообучения · заменить на&nbsp;реальный скриншот</span></div>
 
     <section>
       <h2>Дизайн-система AquaMonitor</h2>
       <p>Чтобы три сценария и&nbsp;разные интерфейсы не&nbsp;расходились по&nbsp;стилю, собрала отдельную дизайн-систему для&nbsp;проекта: 32 токена, 10+ компонентов, 10+ экранов для&nbsp;web и&nbsp;mobile.</p>
       <p>Цвета построены вокруг статусной логики — отдельные токены для&nbsp;critical, warning, normal и&nbsp;neutral состояний. Типографика — единая шкала от&nbsp;Display до&nbsp;Label, чтобы диспетчер считывал иерархию информации за&nbsp;доли секунды.</p>
+      <img src="assets/mvk_image (10).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
     </section>
 
     <section>
@@ -100,6 +122,7 @@
     <section>
       <h2>Результат</h2>
       <p>Презентовали решение жюри хакатона ЛЦТ 2025 — заняли 2 место и&nbsp;получили специальный приз за&nbsp;человекоцентричный дизайн.</p>
+      <img src="assets/mvk_image (7).png" alt="..." style="border-radius:8px; margin:24px 0; width:100%; cursor:zoom-in;" onclick="document.getElementById('lightbox-img').src=this.src; document.getElementById('lightbox').style.display='flex';">
     </section>
 
     <section>
@@ -134,5 +157,8 @@
 </footer>
 
 <script src="entrance.js"></script>
+<div id="lightbox" onclick="this.style.display='none'" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:999; align-items:center; justify-content:center; padding:20px; cursor:zoom-out;">
+  <img id="lightbox-img" src="" style="max-width:100%; max-height:100%; border-radius:8px;">
+</div>
 </body>
 </html>

@@ -101,7 +101,7 @@ html.entrance-off .hl-line { opacity: 1 !important; transform: none !important; 
   background: var(--grad); border-radius: 2px; opacity: 0.85; z-index: -1;
   filter: blur(0.3px);
 }
-.stat-row { display: flex; flex-wrap: wrap; gap: 80px; }
+.stat-row { display: flex; flex-wrap: wrap; gap: 44px; }
 .stat .num {
   font-family: 'Inter', sans-serif; font-size: 27px; font-weight: 500;
   background-image: var(--grad);
